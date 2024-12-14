@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Helpers Rights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-customBlue {
+            background-color: rgb(29, 73, 146) !important;
+        }
+        .text-customBlue {
+            color: rgb(29, 73, 146) !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="./logo.webp" alt="Logo" class="h-16 w-16">
+            <h1 class="text-2xl font-bold text-customBlue">DomestiCare Connect</h1>
+        </div>
+        <nav class="space-x-6 flex items-center">
+            <a href="#about" class="text-gray-700 hover:text-customBlue">About</a>
+            <a href="#legal-advice" class="text-gray-700 hover:text-customBlue">Legal Advice</a>
+            <a href="#chatbot" class="text-gray-700 hover:text-customBlue">Chat</a>
+            <a href="#contact" class="text-gray-700 hover:text-customBlue">Contact</a>
+            <a href="faq.html" class="text-gray-700 hover:text-customBlue">FAQ</a>
+            <!-- Language Switcher Dropdown -->
+            <select id="languageSwitcher" class="bg-gray-200 rounded px-2 py-1">
+                <option value="en">English</option>
+                <option value="tl">Tagalog</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="zh">Chinese</option>
+            </select>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative bg-customBlue text-white py-32 pt-28" 
+    style="background-image: url('./banner-photo.jpg'); background-size: cover; background-position: center; background-blend-mode: overlay; min-height: 600px;">
+    <div class="container mx-auto px-6 text-center mt-24">
+        <h2 id="heroHeading" class="text-4xl font-bold mb-4">Empowering Domestic Helpers</h2>
+        <p id="heroText" class="text-lg mb-6">Learn your rights, get legal advice, and access support services.</p>
+        <a id="learnMore" href="#about" class="bg-white text-customBlue px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">Learn More</a>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section id="videos" class="container mx-auto px-6 py-24">
+    <h2 class="text-3xl font-semibold text-customBlue mb-12 text-center">Introduction to Domestic Worker Rights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+        <div class="video-block text-center">
+            <iframe width="100%" height="315" src="https://drive.google.com/file/d/19d_aTmTDpzTV9FteZpeiy_qYM9jRqqLi/preview" frameborder="0" allowfullscreen></iframe>
+            <p class="mt-2 text-lg font-semibold">Domestic Worker Protection</p>
+        </div>
+        <div class="video-block text-center">
+            <iframe width="100%" height="315" src="https://drive.google.com/file/d/1YRWa_bUaeONxK36rv_db-CIOLo-OGr20/preview" frameborder="0" allowfullscreen></iframe>
+            <p class="mt-2 text-lg font-semibold">Early Termination</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center mt-6">
+        <div class="video-block text-center">
+            <iframe width="100%" height="315" src="https://drive.google.com/file/d/1kRvqe084irPpydj1k0hAYf1grDjzCDjH/preview" frameborder="0" allowfullscreen></iframe>
+            <p class="mt-2 text-lg font-semibold">Employment Right</p>
+        </div>
+        <div class="video-block text-center">
+            <iframe width="100%" height="315" src="https://drive.google.com/file/d/1uphyWdh8v4YnLfJcIdS-FT5TcyqPB6zI/preview" frameborder="0" allowfullscreen></iframe>
+            <p class="mt-2 text-lg font-semibold">Understanding Terms of Employment</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12 space-y-16">
+    <!-- About Section -->
+    <section id="about" class="text-center">
+        <h2 id="aboutHeading" class="text-3xl font-semibold text-customBlue mb-4">
+            <span>Your Rights, Your Voice!</span><br>
+            <span class="block mt-4">Accessible Legal Help for Domestic Workers</span>
+        </h2>
+        <p id="aboutText" class="text-gray-700 max-w-3xl mx-auto">Empowering Workers, Connecting Agencies, Protecting Rights.</p>
+        <a href="faq.html" class="mt-6 inline-block bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">View Frequently Asked Questions</a>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section id="what-we-offer" class="container mx-auto px-6 py-24">
+        <h2 class="text-3xl font-semibold text-customBlue mb-8 text-center">What we offer:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <p class="text-lg mb-4">Chat with our Virtual Assistant</p>
+                <p class="text-gray-700 mb-6">Get answers, submit disputes, and access tailored advice instantly</p>
+                <a href="chatbot.html" class="inline-block bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Chatbot</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <p class="text-lg mb-4">Document Automation</p>
+                <p class="text-gray-700 mb-6">Generate Mock-up Contracts using our Document automation tool</p>
+                <a href="doc-automation.html" class="inline-block bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Document Automation</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Legal Advice Section -->
+<section id="legal-advice" class="bg-white shadow-md rounded-lg p-8 text-center">
+    <h2 id="legalAdviceHeading" class="text-3xl font-semibold text-customBlue mb-4">Submit Your Legal Questions</h2>
+    <form id="adviceForm" class="space-y-6">
+        <input type="text" id="name" placeholder="Your Name" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required>
+        <input type="email" id="email" placeholder="Email Address" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required>
+        <textarea id="question" placeholder="Your Question" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required></textarea>
+        <div class="flex items-center space-x-2">
+            <input type="checkbox" id="consent" required>
+            <label for="consent" class="text-gray-700">I consent to the collection and processing of my data.</label>
+        </div>
+        <button type="submit" class="bg-customBlue text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Submit</button>
+    </form>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('adviceForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            const thankYouMessage = document.createElement('p');
+            thankYouMessage.textContent = 'Thank you for your enquiry, we will get back to you soon!';
+            thankYouMessage.className = 'text-green-500 text-lg font-semibold mt-4';
+            form.innerHTML = ''; // Clear the form
+            form.appendChild(thankYouMessage); // Display the thank you message
+
+            const submitAnotherButton = document.createElement('button');
+            submitAnotherButton.textContent = 'Submit another Enquiry';
+            submitAnotherButton.className = 'mt-4 inline-block bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700';
+            submitAnotherButton.addEventListener('click', function() {
+                location.reload(); // Reload the page to reset the form
+            });
+            form.appendChild(submitAnotherButton); // Add the button to the form
+        });
+    });
+</script>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <p>&copy; 2024 Domestic Helpers Rights. All rights reserved.</p>
+        <div class="space-x-4">
+            <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400">Terms</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Fetch translations from the JSON file
+    async function fetchTranslations() {
+        const response = await fetch('./translations.json');
+        const translations = await response.json();
+        document.getElementById('languageSwitcher').addEventListener('change', function () {
+            const selectedLang = this.value;
+            updateLanguage(translations, selectedLang);
+        });
+        updateLanguage(translations, 'en'); // Default to English
+    }
+
+    function updateLanguage(translations, lang) {
+        const elementsToUpdate = [
+            { id: 'heroHeading', key: 'heroHeading' },
+            { id: 'heroText', key: 'heroText' },
+            { id: 'learnMore', key: 'learnMore' },
+            { id: 'aboutHeading', key: 'aboutHeading' },
+            { id: 'aboutText', key: 'aboutText' },
+            { id: 'legalAdviceHeading', key: 'legalAdviceHeading' },
+            { id: 'chatHeading', key: 'chatHeading' },
+            { id: 'chatText', key: 'chatText' }
+        ];
+        elementsToUpdate.forEach(({ id, key }) => {
+            document.getElementById(id).textContent = translations[lang]?.[key] || document.getElementById(id).textContent;
+        });
+    }
+
+    fetchTranslations();
+
+
+
+    // Chatbot logic
+    document.getElementById('sendMessage').addEventListener('click', async () => {
+        const userInput = document.getElementById('userInput').value.trim();
+        if (!userInput) return;
+        const chatContainer = document.getElementById('chatContainer');
+
+        const userMessage = document.createElement('div');
+        userMessage.className = 'text-right mb-2';
+        userMessage.textContent = `You: ${userInput}`;
+        chatContainer.appendChild(userMessage);
+
+        try {
+            const response = await fetch('https://example.com/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userInput })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const botMessage = document.createElement('div');
+                botMessage.className = 'text-left mb-2';
+                botMessage.textContent = `Bot: ${data.reply}`;
+                chatContainer.appendChild(botMessage);
+            } else {
+                alert('Error in chatbot response.');
+            }
+        } catch (error) {
+            alert('An error occurred with the chatbot.');
+        }
+
+        document.getElementById('userInput').value = '';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "en": {
+        "heroHeading": "Empowering Domestic Helpers",
+        "heroText": "Learn your rights, get legal advice, and access support services.",
+        "learnMore": "Learn More",
+        "aboutHeading": "About Your Rights",
+        "aboutText": "Empowering Workers, Connecting Agencies, Protecting Rights.",
+        "legalAdviceHeading": "Submit your legal questions",
+        "chatHeading": "Chat with Us",
+        "chatText": "Start a conversation about your situation and get automated assistance."
+    },
+    "tl": {
+        "heroHeading": "Pagpapalakas sa mga Kasambahay",
+        "heroText": "Alamin ang iyong mga karapatan, kumuha ng legal na payo, at makakuha ng suporta.",
+        "learnMore": "Alamin Pa",
+        "aboutHeading": "Tungkol sa Iyong mga Karapatan",
+        "aboutText": "Pinapalakas ang mga manggagawa, Pinagkakabit ang mga ahensya, Pinoprotektahan ang mga karapatan.",
+        "legalAdviceHeading": "Kumuha ng Legal na Payo",
+        "chatHeading": "Makipag-chat sa Amin",
+        "chatText": "Simulan ang isang pag-uusap tungkol sa iyong sitwasyon at makakuha ng tulong."
+    },
+    "id": {
+        "heroHeading": "Memberdayakan Pekerja Rumah Tangga",
+        "heroText": "Pelajari hak Anda, dapatkan nasihat hukum, dan akses layanan dukungan.",
+        "learnMore": "Pelajari Lebih Lanjut",
+        "aboutHeading": "Tentang Hak Anda",
+        "aboutText": "Memberdayakan Pekerja, Menghubungkan Agen, Melindungi Hak.",
+        "legalAdviceHeading": "Dapatkan Nasihat Hukum",
+        "chatHeading": "Obrolan dengan Kami",
+        "chatText": "Mulailah percakapan tentang situasi Anda dan dapatkan bantuan otomatis."
+    },
+    "zh": {
+        "heroHeading": "赋权家务助理",
+        "heroText": "了解您的权利，获得法律建议，并获取支持服务。",
+        "learnMore": "了解更多",
+        "aboutHeading": "关于您的权利",
+        "aboutText": "赋予工人权力，连接机构，保护权利。",
+        "legalAdviceHeading": "获得法律建议",
+        "chatHeading": "与我们聊天",
+        "chatText": "开始讨论您的情况并获得自动帮助。"
+    }
+}

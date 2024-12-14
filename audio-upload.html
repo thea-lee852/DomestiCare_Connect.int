@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Upload - Domestic Helpers Rights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-customBlue {
+            background-color: rgb(29, 73, 146) !important;
+        }
+        .text-customBlue {
+            color: rgb(29, 73, 146) !important;
+        }
+        .arrow {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: rgb(29, 73, 146);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="./logo.webp" alt="Logo" class="h-16 w-16">
+            <h1 class="text-2xl font-bold text-customBlue">DomestiCare Connect</h1>
+        </div>
+        <nav class="space-x-6 flex items-center">
+            <a href="index.html" class="text-gray-700 hover:text-customBlue">Home</a>
+            <a href="faq.html" class="text-gray-700 hover:text-customBlue">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Audio Upload Section -->
+<section class="container mx-auto px-6 py-24">
+    <h2 class="text-3xl font-semibold text-customBlue mb-8 text-center">Upload Your Audio</h2>
+    <p class="text-lg text-gray-700 text-center mb-4">Upload your audio for direct transcription, we will review your audio and send it directly to your connected lawyer.</p>
+    <form id="audioForm" class="bg-white p-6 rounded-lg shadow-md text-center" enctype="multipart/form-data">
+        <input type="file" id="audioFile" name="audioFile" accept="audio/*" class="mb-4">
+        <button type="submit" class="bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Upload</button>
+    </form>
+    <p class="text-lg text-gray-700 text-center mt-20">*If you haven't been connected to a lawyer yet please get in touch with us and we will connect you with one!</p>
+    <div id="transcriptionResult" class="mt-6 text-center text-lg text-gray-700"></div>
+    <div class="mt-8 text-center">
+        <a href="connect-lawyer.html" class="bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Connect to a Lawyer</a>
+    </div>
+</section>
+
+<!-- Workflow Diagram Section -->
+<section class="container mx-auto px-6 py-24">
+    <h2 class="text-3xl font-semibold text-customBlue mb-8 text-center">How It Works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-customBlue mb-4">Step 1</h3>
+            <p class="text-gray-700">Upload your audio in your native tongue. Supported languages include English, Tagalog, Bahasa Indonesia, Chinese, and more.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-customBlue mb-4">Step 2</h3>
+            <p class="text-gray-700">AI Powered fast transcription for document generation.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-customBlue mb-4">Step 3</h3>
+            <p class="text-gray-700">Audio review from our end.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-customBlue mb-4">Step 4</h3>
+            <p class="text-gray-700">Transcription sent to your connected lawyer.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-customBlue mb-4">Step 5</h3>
+            <p class="text-gray-700">Your connected lawyer will get in touch with you.</p>
+        </div>
+    </div>
+    <p class="text-lg text-gray-700 text-center mt-8">DomestiCare Connect platform will be following your case throughout this process.</p>
+</section>
+
+</body>
+</html>

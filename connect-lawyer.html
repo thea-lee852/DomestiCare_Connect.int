@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to a Lawyer - Domestic Helpers Rights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-customBlue {
+            background-color: rgb(29, 73, 146) !important;
+        }
+        .text-customBlue {
+            color: rgb(29, 73, 146) !important;
+        }
+        .lawyer-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <a href="index.html">
+                <img src="./logo.webp" alt="Logo" class="h-16 w-16">
+            </a>
+            <a href="index.html">
+                <h1 class="text-2xl font-bold text-customBlue">DomestiCare Connect</h1>
+            </a>
+        </div>
+        <nav class="space-x-6 flex items-center">
+            <a href="index.html" class="text-gray-700 hover:text-customBlue">Home</a>
+            <a href="faq.html" class="text-gray-700 hover:text-customBlue">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Connect to a Lawyer Section -->
+<section class="container mx-auto px-6 py-24">
+    <h2 class="text-4xl font-semibold text-customBlue mb-8 text-center">Connect to a Lawyer</h2>
+    <form id="connectLawyerForm" class="bg-white p-6 rounded-lg shadow-md text-center space-y-6">
+        <input type="text" id="name" placeholder="Your Name" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required>
+        <textarea id="description" placeholder="Description of Issue" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required></textarea>
+        <select id="preferences" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required>
+            <option value="" disabled selected>Select a Lawyer</option>
+            <option value="Johnny Lee">Johnny Lee - Employment Law</option>
+            <option value="Vickie Wu">Vickie Wu - Immigration Law</option>
+            <option value="Mark Davis">Mark Davis - Family Law</option>
+        </select>
+        <select id="language" class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-customBlue" required>
+            <option value="" disabled selected>Preferred Language</option>
+            <option value="english">English</option>
+            <option value="tagalog">Tagalog</option>
+            <option value="bahasa">Bahasa Indonesia</option>
+            <option value="chinese">Chinese</option>
+        </select>
+        <div class="flex items-center space-x-2">
+            <input type="checkbox" id="consent" required>
+            <label for="consent" class="text-gray-700">
+                I agree to the <a href="PPS.html" class="text-customBlue underline">Privacy Information Collection Policy</a>
+            </label>
+        </div>
+        <button type="submit" class="bg-customBlue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Submit</button>
+    </form>
+</section>
+
+<!-- Lawyers We Work With Section -->
+<section class="container mx-auto px-6 py-24">
+    <h2 class="text-3xl font-semibold text-customBlue mb-8 text-center">Lawyers We Work With</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./Lawer1.webp" alt="Johnny Lee" class="lawyer-img mb-4">
+            <h3 class="text-xl font-semibold text-customBlue mb-2">Johnny Lee</h3>
+            <p class="text-gray-700">Specializes in employment law and has over 10 years of experience helping domestic workers.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./Lawer2.webp" alt="Vickie Wu" class="lawyer-img mb-4">
+            <h3 class="text-xl font-semibold text-customBlue mb-2">Vickie Wu</h3>
+            <p class="text-gray-700">Focuses on immigration law and has a strong track record of assisting foreign domestic helpers.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="./Lawer3.webp" alt="Mark Davis" class="lawyer-img mb-4">
+            <h3 class="text-xl font-semibold text-customBlue mb-2">Mark Davis</h3>
+            <p class="text-gray-700">Expert in family law and provides compassionate support for domestic workers facing legal issues.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('connectLawyerForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('connectLawyerForm').classList.add('hidden');
+        document.getElementById('confirmationMessage').classList.remove('hidden');
+    });
+</script>
+
+</body>
+</html>

@@ -12,6 +12,23 @@
         .text-customBlue {
             color: rgb(29, 73, 146) !important;
         }
+        .faq-section {
+            display: none;
+        }
+        .faq-section.active {
+            display: grid;
+        }
+        .faq-header {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .faq-header:hover {
+            color: rgb(29, 73, 146);
+        }
+        .faq-header span {
+            margin-left: 8px;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -24,7 +41,7 @@
             <h1 class="text-2xl font-bold text-customBlue">DomestiCare Connect</h1>
         </div>
         <nav class="space-x-6 flex items-center">
-            <a href="NEW%20law%20web.html" class="text-gray-700 hover:text-customBlue">Home</a>
+            <a href="index.html" class="text-gray-700 hover:text-customBlue">Home</a>
             <a href="faq.html" class="text-gray-700 hover:text-customBlue">FAQ</a>
         </nav>
     </div>
@@ -33,29 +50,111 @@
 <!-- FAQ Section -->
 <section class="container mx-auto px-6 py-24">
     <h2 class="text-3xl font-semibold text-customBlue mb-8 text-center">Frequently Asked Questions</h2>
-    <div class="space-y-6">
+    
+    <!-- General Questions -->
+    <div class="faq-header text-2xl font-semibold text-customBlue mb-6" onclick="toggleFAQ('generalQuestions')">
+        General Questions
+        <span id="generalQuestionsArrow">▲</span>
+    </div>
+    <div id="generalQuestions" class="faq-section space-y-6">
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-customBlue">Residency and Work Location</h3>
+            <h4 class="text-xl font-semibold text-customBlue">Residency and Work Location</h4>
             <p class="mt-2 text-gray-700">You are required to reside at your employer’s residence as specified in the contract. You should work only at the designated address mentioned in the contract, except for incidental duties performed outside, such as grocery shopping or car washing.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-customBlue">Domestic Duties</h3>
+            <h4 class="text-xl font-semibold text-customBlue">Domestic Duties</h4>
             <p class="mt-2 text-gray-700">You are expected to carry out the duties outlined in the Standard Employment Contract, which include household chores, cooking, child-minding, and elderly care.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-customBlue">Restriction on Outside Employment</h3>
+            <h4 class="text-xl font-semibold text-customBlue">Restriction on Outside Employment</h4>
             <p class="mt-2 text-gray-700">You must not engage in any other form of employment or work for other employers.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-customBlue">Early Termination</h3>
+            <h4 class="text-xl font-semibold text-customBlue">Early Termination</h4>
             <p class="mt-2 text-gray-700">If you wish to terminate the contract early, you must provide one month’s notice or agree to payment in lieu of notice, unless justified by circumstances such as fear of violence or disease, ill-treatment by the employer, or permanent medical unfitness after five or more years of employment.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-customBlue">Legal Consequences of Breach</h3>
+            <h4 class="text-xl font-semibold text-customBlue">Legal Consequences of Breach</h4>
             <p class="mt-2 text-gray-700">Breaching the contract or the conditions of your stay may result in prosecution, deportation, or a ban on future employment in Hong Kong.</p>
         </div>
     </div>
+
+    <!-- Specific Questions -->
+    <div class="faq-header text-2xl font-semibold text-customBlue mt-12 mb-6" onclick="toggleFAQ('specificQuestions')">
+        Specific Questions
+        <span id="specificQuestionsArrow">▼</span>
+    </div>
+    <div id="specificQuestions" class="faq-section grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Eligibility</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Who can hire a foreign domestic helper in Hong Kong?<br><strong>A:</strong> Employers must be Hong Kong residents with a household income of at least HK$15,000 per month or equivalent financial assets.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can I hire multiple helpers?<br><strong>A:</strong> Yes, but you must demonstrate sufficient financial means to support multiple helpers.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Employment Contract</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> What is the Standard Employment Contract?<br><strong>A:</strong> It is a government-prescribed contract (ID 407) that sets out the terms of employment, including wages, duties, living arrangements, and other obligations.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can I modify the terms in the Standard Employment Contract?<br><strong>A:</strong> No, all terms are standardized and must comply with Hong Kong laws.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Working Conditions</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can the helper live outside my residence?<br><strong>A:</strong> No, the helper must reside at your residence as specified in Clause 3 of the contract.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can I require my helper to perform duties outside domestic work?<br><strong>A:</strong> No, helpers can only perform domestic duties as specified, such as household chores, cooking, child-minding, and elderly care.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can my helper follow my family overseas?<br><strong>A:</strong> Yes, with mutual consent. However, ensure the helper has proper travel documents and insurance coverage.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Wages and Allowances</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> What is the Minimum Allowable Wage (MAW) for helpers?<br><strong>A:</strong> As of September 29, 2023, the MAW is HK$4,870 per month.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Do I need to provide food?<br><strong>A:</strong> Yes, you must either provide food free of charge or pay a food allowance of at least HK$1,236 per month.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Rest Days and Holidays</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> How many rest days must I provide?<br><strong>A:</strong> At least one rest day per week.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Are helpers entitled to statutory holidays?<br><strong>A:</strong> Yes, after working for three months, helpers are entitled to paid statutory holidays.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Termination of Employment</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can I terminate the contract early?<br><strong>A:</strong> Yes, by giving one month’s notice or paying one month’s wages in lieu of notice.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can I dismiss a helper without notice?<br><strong>A:</strong> Yes, in cases of serious misconduct, such as fraud or habitual neglect of duties.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> What should I do if the contract is terminated?<br><strong>A:</strong> Notify the Immigration Department and Labour Department within seven days of the termination.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Insurance and Medical Care</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Do I need to provide insurance for the helper?<br><strong>A:</strong> Yes, you must take out an insurance policy under the Employees' Compensation Ordinance to cover work-related injuries.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Am I responsible for the helper’s medical expenses?<br><strong>A:</strong> Yes, you must cover all medical fees and expenses incurred during the helper’s employment.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Legal Restrictions</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Can my helper work for someone else or take up a side job?<br><strong>A:</strong> No, helpers are prohibited from working for other employers or taking non-domestic jobs.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> What are the penalties for breaching employment laws?<br><strong>A:</strong> Employers may face fines or imprisonment for violations, such as failing to provide insurance or engaging helpers in unauthorized work.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Renewal and Visa Applications</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> How do I renew my helper’s contract?<br><strong>A:</strong> Submit a new Standard Employment Contract and visa extension application to the Immigration Department before the current visa expires.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> How long does the visa application process take?<br><strong>A:</strong> Visa applications typically take 4-6 weeks to process.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-customBlue">Other Issues</h4>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> What should I do if disputes arise?<br><strong>A:</strong> Contact the Labour Department for mediation or file a claim with the Labour Tribunal.</p>
+            <p class="mt-2 text-gray-700"><strong>Q:</strong> Are live-in helpers subject to the Statutory Minimum Wage (SMW)?<br><strong>A:</strong> No, live-in foreign domestic helpers are exempt from SMW but must receive the Minimum Allowable Wage.</p>
+        </div>
+    </div>
 </section>
+
+<script>
+    function toggleFAQ(sectionId) {
+        const section = document.getElementById(sectionId);
+        const arrow = document.getElementById(sectionId + 'Arrow');
+        if (section.classList.contains('active')) {
+            section.classList.remove('active');
+            section.style.display = 'none';
+            arrow.textContent = '▼';
+        } else {
+            section.classList.add('active');
+            section.style.display = 'grid';
+            arrow.textContent = '▲';
+        }
+    }
+</script>
 
 </body>
 </html>
